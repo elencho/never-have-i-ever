@@ -12,17 +12,22 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+const QuestionChild = ['whats up','have u ever been in uk','whats up1','have u ever been in uk1',]
+const randomItem = QuestionChild[Math.floor(Math.random() * QuestionChild.length)];
+const QuestionMid = ['first kiss','first love']
+const QuestionAdult = ['first nightstand','uk or us']
 
+ 
 
-
-const Home = ({ navigation }) => {
+function Home ({ navigation }) {
   return (
     <>
 <ImageBackground source={require('../images/wall.jpeg')} style={styles.back}>
   <View style={styles.box}>
     
 <Image source={require('../images/logo.png')} style={styles.logo}/>
-<TouchableOpacity onPress={() => navigation.navigate('Questions')}>
+<TouchableOpacity onPress={() => {navigation.navigate('Questions')
+ QuestionChild[Math.floor(Math.random() * QuestionChild.length)]}}>
 <View style={styles.container}
 >
   <Image source={require('../images/game.png')} style={styles.icons}/>
@@ -41,7 +46,7 @@ const Home = ({ navigation }) => {
   <Text style={{fontFamily: 'bpg_extrasquare_mtavruli_2009', fontSize: 20}}>18+ და რამე</Text>
   </View>
   </TouchableOpacity>
-</View>
+</View> 
   </ImageBackground> 
     </>
   );
@@ -54,10 +59,13 @@ const Stack = createStackNavigator();
 
 function MyStack() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator  
+     >
 
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Questions" component={Questions} />
+      
+    <Stack.Screen name="Questions" component={Questions} />
+
       
     </Stack.Navigator>
   );

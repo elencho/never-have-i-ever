@@ -12,12 +12,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const QuestionChild = ['whats up','have u ever been in uk','whats up1','have u ever been in uk1',]
 const randomItem = QuestionChild[Math.floor(Math.random() * QuestionChild.length)];
-const QuestionMid = ['first kiss','first love']
-const QuestionAdult = ['first nightstand','uk or us']
 
- 
 
 function Home ({ navigation }) {
   return (

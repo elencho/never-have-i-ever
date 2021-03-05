@@ -1,13 +1,5 @@
 
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-} from 'react-native';
 
 import Home from './components/Home'
 import Questions from './components/Questions'
@@ -36,9 +28,6 @@ function MyStack() {
 
       <Stack.Screen name="QuestionsAdult" component={QuestionsAdult} />
 
-
-
-      
     </Stack.Navigator>
   );
 }

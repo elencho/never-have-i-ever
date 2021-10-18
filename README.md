@@ -10,7 +10,6 @@
 # Development
 Easily set up a local development environment!
 
-Build all the examples and start storybook server on localhost:9009:
 
 * clone
 * `npm install`

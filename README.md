@@ -10,7 +10,6 @@
 # Development
 Easily set up a local development environment!
 
-Build all the examples and start storybook server on localhost:9009:
 
 * clone
 * `npm install`
@@ -24,5 +23,5 @@ Build all the examples and start storybook server on localhost:9009:
   - [Recommended online editor "Snack"](snack.expo.io)
 
 
-# Contributing
-All contributions are welcome!
+# Available on Google Play!
+https://play.google.com/store/apps/details?id=com.meArasdros
